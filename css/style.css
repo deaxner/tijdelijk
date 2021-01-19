@@ -1,0 +1,427 @@
+/******************************************************
+Kleuren:
+# Grijs (tekst): #86888a
+# Licht-blauw (hoofdkleur/achtergrond): #00a0dc
+# Zwart (h3 en kop doelstelling): #000;
+# Wit (tekst op blauwe achtergrond, fotoruimte): white;
+# Grijs (tweede fotoruimte): lightgrey;
+*******************************************************/
+
+/******************************************************
+Typography:
+Headings: (h1 tm h3): Raleway , (h4): Georgia
+Body: PT Sans
+Quote: Georgia
+*******************************************************/
+
+/******************************************************
+1. Universal styles (typography, etc)
+2. Header & Nav styles
+3. Unique Selling Points styles
+4. Over-stichting en Doelstelling section styles
+5. Footer
+6. Responsive Styles
+******************************************************/
+
+/******************************************
+*******************************************
+1. Universal styles
+*******************************************
+*******************************************/
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  color: #00a0dc;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 90px 0 17px 0;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: #000;
+}
+
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #00a0dc;
+  font-style: italic;
+}
+
+p {
+  color: #86888a;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 0 0 0 5%;
+  width: 90%;
+}
+
+.wit {
+  color: #fff;
+}
+
+.buttonStyle {
+  background-color: #00a0dc;
+  padding: 5px 15px;
+  color: white;
+  /*margin: 20px 60px 0 auto;*/
+  width: max-content;
+  margin-top: 15px;
+}
+
+/******************************************
+*******************************************
+2. Header & Nav styles
+*******************************************
+*******************************************/
+
+.stichtingslogo {
+  height: 40px;
+  width: auto;
+  background-color: white;
+  margin: 5px 0 5px 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a0dc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 0px;
+}
+
+nav li {
+  float: left;
+}
+nav li a {
+  margin: 0 1em 0 2em;
+  text-decoration: white;
+  color: white;
+  font-size: 0.95em; /*0.8759em;*/
+}
+nav .menu {
+  clear: none;
+  float: right;
+  max-height: none;
+}
+nav .menu-icon, nav .menu-btn {
+  display: none;
+}
+
+#hero {
+  max-width: 100%;
+  background-image: url("../images/w-itsolutions.png");
+  background-size: cover;
+  background-position: center;
+  height: 610px; /*was zonder sticky menu 500px*/
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.tekstOpHero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 0 10%;
+}
+
+.heroStichting {
+  align-self: flex-end;
+}
+
+.heroSlogan {
+  margin-bottom: 30px;
+}
+
+.meerweten {
+  margin-top: -15px;
+}
+
+/******************************************
+*******************************************
+3. Unique Selling Points styles
+*******************************************
+*******************************************/
+
+#uniqueSellingPoints {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4% 0;
+}
+
+#uniqueSellingPoints > div h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 0;
+  text-align: center;
+}
+
+#uniqueSellingPoints > div p {
+  /*padding-bottom: 20px;*/
+  padding: 20px;
+}
+
+/******************************************
+*******************************************
+4. Over-stichting en doelstelling styles
+*******************************************
+*******************************************/
+
+#over-stichting {
+  display: flex;
+  background-color: #00a0dc;
+}
+
+.fotoruimte {
+  width: 400px;
+  height: 390px;
+  background-color: white;
+  margin: 5% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pakkendeTekst {
+  width: 150px;
+}
+
+.tekstOverStichting {
+  flex: 2 1 66%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.randje {
+  border: 1px solid;
+}
+
+#doelstelling {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+#doelstelling .fotoruimte {
+  background-color: lightgray;
+}
+
+/******************************************
+*******************************************
+5. Footer styles
+*******************************************
+*******************************************/
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #00a0dc;
+  padding: 38px;
+}
+
+footer > div p:first-child {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer > div p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+footer > div p:last-child {
+  color: white;
+  font-size: 13px;
+}
+
+/**********************************************
+***********************************************
+6. Responsive styles {kleiner dan 950 px breed}
+***********************************************
+**********************************************/
+
+@media only screen and (max-width: 950px) {
+  nav {
+    padding: 2px;
+  }
+
+
+ #hero {
+    height: 400px;
+    justify-content: left;
+    padding-left: 0px;
+  }
+
+  .meerweten {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #uniqueSellingPoints {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #uniqueSellingPoints > div h3 {
+    text-align: left;
+  }
+
+  #uniqueSellingPoints > div p {
+    /*padding-bottom: 20px;*/
+    padding: 0;
+  }
+
+  .fotoruimte {
+    display: none;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  .tekstOverStichting {
+    margin: 2%;
+  }
+
+  footer {
+    justify-content: space-between;
+    padding: 38px 2%;
+  }
+
+  .heroStichting {
+    /*padding-left: 350px;*/
+    align-self: flex-start;
+  }
+
+  
+nav {
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+
+/* menu */
+nav{ 
+  display:block;
+
+}
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+nav ul li{
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff;
+}
+nav ul li:last-of-type{ 
+  border:none;
+}
+/* menu icon */
+
+nav .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+nav .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+nav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+}
+
