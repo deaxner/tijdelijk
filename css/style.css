@@ -47,7 +47,7 @@ h2 {
   font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 90px 0 17px 0;
+  margin: 12% 0 17px 0;
 }
 
 h3 {
@@ -86,7 +86,7 @@ main {
   color: white;
   /*margin: 20px 60px 0 auto;*/
   width: max-content;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 /******************************************
@@ -99,7 +99,7 @@ main {
   height: 40px;
   width: auto;
   background-color: white;
-  margin: 5px 0 5px 10px;
+  margin: 5px 0 5px 15px;
 }
 
 nav {
@@ -127,6 +127,7 @@ nav .menu {
   float: right;
   max-height: none;
 }
+
 nav .menu-icon, nav .menu-btn {
   display: none;
 }
@@ -136,7 +137,7 @@ nav .menu-icon, nav .menu-btn {
   background-image: url("../images/w-itsolutions.png");
   background-size: cover;
   background-position: center;
-  height: 610px; /*was zonder sticky menu 500px*/
+  height: 580px; /*was zonder sticky menu 500px*/
   display: flex;
   align-items: center;
   justify-content: left;
@@ -183,6 +184,7 @@ nav .menu-icon, nav .menu-btn {
 #uniqueSellingPoints > div p {
   /*padding-bottom: 20px;*/
   padding: 20px;
+  text-align: left;
 }
 
 /******************************************
@@ -207,7 +209,7 @@ nav .menu-icon, nav .menu-btn {
 }
 
 .pakkendeTekst {
-  width: 150px;
+  width: 200px;
 }
 
 .tekstOverStichting {
@@ -229,6 +231,11 @@ nav .menu-icon, nav .menu-btn {
 
 #doelstelling .fotoruimte {
   background-color: lightgray;
+}
+
+.uitlegOverStichting {
+  padding-right: 6%;
+  padding-top: 2%;
 }
 
 /******************************************
@@ -336,6 +343,11 @@ nav ul {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  width: 100%;
+}
+
+.buttonStyle {
+  margin-bottom: 15px;
 }
 
 
