@@ -5,3 +5,7 @@
 [0311/142013.625:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
 [0311/142123.005:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
 [0311/142150.337:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[0408/123149.255:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[0408/124050.030:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[0408/125614.311:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
+[0408/125615.313:ERROR:registration_protocol_win.cc(102)] CreateFile: Het systeem kan het opgegeven bestand niet vinden. (0x2)
